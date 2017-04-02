@@ -1,0 +1,52 @@
+body {
+    background: black;
+    background-image: url('bg.jpg');
+    background-size: cover;
+}
+img{
+    
+      pointer-events: none;
+
+}
+#container {
+    display: table;
+}
+
+.cover {
+    width: auto;
+    height: 100vh;
+    display: table-cell;
+}
+
+.cover img {
+    height: 100%;
+}
+
+#main {
+    float: left;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: table;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+li {
+    display: table-cell;
+}
+
+#sketch-holder{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    left: 0;
+/*    background: red;*/
+}
+
+#main img {
+    overflow: scroll;
+    padding-top: 10vh;
+    height: 80vh;
+}
