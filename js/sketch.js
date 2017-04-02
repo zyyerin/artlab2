@@ -11,7 +11,6 @@ function preload() {
 }
 
 function setup() {
-    // background(255,0,0);
     canvas = createCanvas(windowWidth, windowHeight);
     canvas.parent('sketch-holder');
     imageMode(CENTER);
