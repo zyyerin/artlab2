@@ -15,24 +15,35 @@ function setup() {
     canvas = createCanvas(windowWidth, windowHeight);
     canvas.parent('sketch-holder');
     imageMode(CENTER);
-    blendMode(EXCLUSION);
 
 }
 
-// function mouseWheel(event) {
-// function mouseDragged() {
-function mouseReleased() {
+function mouseDragged() {
+        blendMode(OVERLAY);
+
         idx = Math.floor(random(imgs.length));
+        var s = random(0.6, 1);
         push();
         translate(mouseX, mouseY);
         rotate(random(-30, 30));
-        image(imgs[idx], 0, 0);
-        pop();
+        tint(255, random(200,255));
+        image(imgs[idx], 0, 0, imgs[idx].width * s, imgs[idx].height * s);
+        pop();  
 }
 
-function mousePressed() {
-        tint(255,255);
+function mouseReleased() {
+        blendMode(EXCLUSION);
+
+        idx = Math.floor(random(imgs.length));
+        var s = random(1, 1.4);
+        push();
+        translate(mouseX, mouseY);
+        rotate(random(-30, 30));
+        tint(255, random(200,255));
+        image(imgs[idx], 0, 0, imgs[idx].width * s, imgs[idx].height * s);
+        pop();  
 }
+
 
 function windowResized(){
   resizeCanvas(windowWidth, windowHeight);
