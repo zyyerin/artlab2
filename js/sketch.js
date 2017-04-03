@@ -1,7 +1,7 @@
 var canvas;
 
 const PATH = 'js/data/', FILE = 'image', EXT = '.png';
-const IMAGES = 39, imgs = Array(IMAGES);
+const IMAGES = 72, imgs = Array(IMAGES);
 var idx;
 
 function preload() {
