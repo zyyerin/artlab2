@@ -1,12 +1,11 @@
 body {
-    background: black;
+    cursor: pointer;
+    background: #2A704B;
     background-image: url('bg.jpg');
     background-size: cover;
 }
 img{
-    
-      pointer-events: none;
-
+    pointer-events: none;
 }
 #container {
     display: table;
